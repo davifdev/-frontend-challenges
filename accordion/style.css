@@ -1,0 +1,32 @@
+body {
+  height: 100vh;
+  background-color: #1f1f1f;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+
+  .card {
+    width: 150px;
+    height: 400px;
+    background: #ff0000;
+    border-radius: 35px;
+    transition: all .5s;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    &.active { 
+      width: 350px;
+    }
+  }
+
+}
+
