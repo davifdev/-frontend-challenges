@@ -1,0 +1,23 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1f1f1f;
+}
+
+img.active {
+  display: block;
+}
+
+img {
+  height: 350px;
+  width: 550px;
+  transition: all 0.5s;
+  cursor: pointer;
+  display: none;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
