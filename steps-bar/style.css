@@ -1,0 +1,100 @@
+body {
+  display: flex;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: #fdfdfd;
+  width: 329px;
+  border: 1px solid #ebf0f1;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 40px rgba(39, 71, 78, 0.1);
+  border-radius: 20px;
+  padding: 20px 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.step {
+  position: relative;
+  padding-left: 40px;
+
+  + .step {
+    margin-top: 20px;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #ebf0f1;
+    border: 1px solid #678c94;
+    left: 0;
+    top: calc(50% - 8px);
+  }
+
+  &.active:before {
+    background: #f3344a;
+  }
+
+  &.active:after {
+    background: #f3344a;
+    border: 1px solid #f3344a;
+  }
+
+  &:before {
+    content: "";
+    width: 2px;
+    height: calc(100% + 16px);
+    position: absolute;
+    left: 7px;
+    background: #fff;
+    top: calc(100% - 16px);
+  }
+
+  &:last-child:before {
+    display: none;
+  }
+
+  &.active + .step:not(.active):after {
+    background: #f4d7da;
+    border: 1px solid #f3344a;
+  }
+
+  .step-number {
+    font-size: 16px;
+    line-height: 14px;
+    height: 14px;
+    color: #496970;
+    margin: 0;
+    position: relative;
+
+    .data-step {
+      position: absolute;
+      left: -10px;
+      top: -8px;
+      font-weight: 900;
+      font-size: 23px;
+      color: #eff1f1;
+    }
+
+    p {
+      margin: 0;
+      z-index: 999;
+      position: absolute;
+    }
+  }
+
+  .step-title {
+    font-weight: bold;
+    font-size: 23px;
+    color: #27474e;
+    margin: 0;
+    line-height: 23px;
+  }
+}
