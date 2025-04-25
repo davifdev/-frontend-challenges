@@ -1,37 +1,38 @@
-const shoppingList = [
-  "Arroz",
-  "Feijão",
-  "Carne",
-  "Verduras",
-  "Cuscuz",
-  "Frutas",
-];
-
-const listElement = document.querySelector("#list");
+const listItems = document.querySelector("#list");
 const searchField = document.querySelector("#searchField");
 
-searchField.addEventListener("input", inputHandler);
+const shoppingList = [
+  "Frutas",
+  "Legumes",
+  "Verduras",
+  "Carne",
+  "Frango",
+  "Massas",
+  "Limpeza",
+  "Higiene",
+];
 
-fillList();
+searchField.addEventListener("input", inputHandle);
 
 function fillList(list = shoppingList) {
-  console.log(list);
-  listElement.innerHTML = "";
-
+  listItems.innerHTML = "";
   list.forEach((item) => {
     const li = document.createElement("li");
     li.innerHTML = item;
-    listElement.appendChild(li);
+    listItems.appendChild(li);
   });
 }
 
+fillList();
 
-function inputHandler() {
+function inputHandle() {
   const filteredList = shoppingList.filter((item) => {
     const listItem = item.toLowerCase();
-    const searchWord = searchField.value.toLowerCase();
-    return listItem.includes(searchWord);
+    const searchValue = searchField.value.toLowerCase();
+    return listItem.includes(searchValue);
   });
 
   fillList(filteredList);
 }
+
+console.log(listItems, searchField);
