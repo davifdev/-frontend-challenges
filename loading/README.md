@@ -1,0 +1,5 @@
+- move: é o nome do keyframe
+- 1s: é a duração
+- ease-in-out: é a curva de aceleração da animação
+- infinite: é pra nunca parar
+- alternate: alterna os movimentos
