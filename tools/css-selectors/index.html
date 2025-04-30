@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS Selectors</title>
+  </head>
+  <body>
+    <p>
+      Seletor <b>+</b> Seleciona somente o elemento imediatamente após o primeiro
+      elemento.
+    </p>
+    <code>
+      <b>
+        #plus-selector div + p {
+          color: red;
+        }
+      </b>
+    </code>
+    <div id="plus-selector">
+      <div>
+        <p>Linha 1</p>
+        <p>Linha 2</p>
+      </div>
+
+      <p>Linha 3</p>
+      <p>Linha 4</p>
+      <p>Linha 5</p>
+    </div>
+
+    <p>
+      Difetente do seletor <b>+</b> o seletor <b>~</b> é mais generalista. Ao invés de selecionar somente o primeiro elemento ele seleciona todos.
+    </p>
+    <code>
+      <b>
+        #tilde-selector div ~ p {
+          color: red;
+        }
+      </b>
+    </code>
+    <div id="tilde-selector">
+      <div>
+        <p>Linha 1</p>
+        <p>Linha 2</p>
+      </div>
+
+      <p>Linha 3</p>
+      <p>Linha 4</p>
+      <p>Linha 5</p>
+    </div>
+
+    <p>
+      Seletor <b>&rsaquo;</b> Seleciona somente os filhos diretos.
+    </p>
+    <code>
+      <b>
+        #minor-selector div > p {
+          color: red;
+        }
+      </b>
+    </code>
+    <div id="minor-selector">
+      <div>
+        <p>Linha 1</p>
+        <p>Linha 2</p>
+      </div>
+
+      <p>Linha 3</p>
+      <p>Linha 4</p>
+      <p>Linha 5</p>
+    </div>
+
+    <p>
+      O seletor <b>not</b> exclui determinado elemento de receber a regra. Nesses casos, os últimos elementos <b>p</b> não recebem a cor
+    </p>
+    <code>
+      <b>
+        #not-selector p:not(:last-child) {
+          color: red;
+        }
+      </b>
+    </code>
+    <div id="not-selector">
+      <div>
+        <p>Linha 1</p>
+        <p>Linha 2</p>
+      </div>
+
+      <p>Linha 3</p>
+      <p>Linha 4</p>
+      <p>Linha 5</p>
+    </div>
+  </body>
+</html>
