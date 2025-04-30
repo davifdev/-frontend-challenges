@@ -1,0 +1,99 @@
+body {
+  background: #f1f1f1;
+  color: #1f1f1f;
+  height: 100vh;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.box-title span:first-child {
+  color: #ff0000;
+}
+
+.box-title span:last-child {
+  color: #0000ff;
+}
+
+/* Box 1 */
+.box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-box {
+  width: 25px;
+  height: 25px;
+  background: orangered;
+}
+
+.box .card-box:nth-child(2) {
+  background: yellowgreen;
+}
+
+.box .card-box:nth-last-child(2) {
+  background: yellowgreen;
+}
+
+/* Box 2 */
+.box-2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-box-2 {
+  width: 25px;
+  height: 25px;
+  background: darkred;
+}
+
+.box-2 .card-box-2:nth-child(2n) {
+  background: yellowgreen;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  font-weight: bold;
+}
+
+/* Box 3 */
+
+.box-3, .box-4 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 5px;
+}
+
+.card-box-3 {
+  color: #f1f1f1;
+  text-align: center;
+  font-weight: bold;
+  width: 25px;
+  height: 25px;
+  background: darkblue;
+}
+
+.box-3 .card-box-3:nth-child(odd) {
+  background: orangered;
+}
+
+.box-4 .card-box-3:nth-child(even) {
+  background: orangered;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  font-weight: bold;
+}

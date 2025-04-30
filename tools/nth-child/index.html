@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>nth-child selector</title>
+  </head>
+  <body>
+    <p><b>first-child</b> e <b>last-child</b></p>
+    <div class="box-title">
+      <span>Hello</span>
+      <span>World</span>
+    </div>
+
+    <p>
+      Passando parâmetro de posição do elemento <b>nth-child</b> e
+      <b>nth-last-child</b>
+    </p>
+    <div class="box">
+      <div class="card-box"></div>
+      <div class="card-box"></div>
+      <div class="card-box"></div>
+      <div class="card-box"></div>
+      <div class="card-box"></div>
+      <div class="card-box"></div>
+      <div class="card-box"></div>
+    </div>
+
+    <p>
+      Quando colocamos o n podemos adicionar vários elementos
+      <b>nth-child(2n)</b>
+    </p>
+    <ul>
+      <li>2*0 = 0</li>
+      <li>2*1 = 2</li>
+      <li>2*2 = 4</li>
+      <li>2*3 = 6</li>
+    </ul>
+    <div class="box-2">
+      <div class="card-box-2"></div>
+      <div class="card-box-2"></div>
+      <div class="card-box-2"></div>
+      <div class="card-box-2"></div>
+      <div class="card-box-2"></div>
+      <div class="card-box-2"></div>
+      <div class="card-box-2"></div>
+    </div>
+
+    <p>
+      Selecionando números ímpares e pares <b>nth-child(odd)</b>
+      <b>nth-child(even)</b>
+      <b>nth-child(2n+1)</b>
+      <b>nth-child(2n)</b>
+    </p>
+
+    <div class="box-3">
+      <div class="card-box-3">1</div>
+      <div class="card-box-3">2</div>
+      <div class="card-box-3">3</div>
+      <div class="card-box-3">4</div>
+      <div class="card-box-3">5</div>
+      <div class="card-box-3">6</div>
+      <div class="card-box-3">7</div>
+      <div class="card-box-3">8</div>
+      <div class="card-box-3">9</div>
+      <div class="card-box-3">10</div>
+    </div>
+
+    <div class="box-4">
+      <div class="card-box-3">1</div>
+      <div class="card-box-3">2</div>
+      <div class="card-box-3">3</div>
+      <div class="card-box-3">4</div>
+      <div class="card-box-3">5</div>
+      <div class="card-box-3">6</div>
+      <div class="card-box-3">7</div>
+      <div class="card-box-3">8</div>
+      <div class="card-box-3">9</div>
+      <div class="card-box-3">10</div>
+    </div>
+
+    <p>Outros exemplos <b>nth-child(3n-1)</b> <b>nth-child(3n+1)</b></p>
+    <ul>
+      <li>3 * 0 - 1 = -1</li>
+      <li>3 * 1 - 1 = 2</li>
+      <li>3 * 2 - 1 = 5</li>
+      <li>3 * 3 - 1 = 8</li>
+      <li>3 * 4 - 1 = 11</li>
+      <li>3 * 1 + 1 = 4</li>
+      <li>3 * 2 + 1 = 7</li>
+      <li>3 * 3 + 1 = 10</li>
+      <li>3 * 4 + 1 = 13</li>
+    </ul>
+  </body>
+</html>
